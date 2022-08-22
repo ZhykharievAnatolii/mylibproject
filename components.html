@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/components.css">
+    <title>layout page3</title>
+</head>
+<header class="header">
+    <div class="lib">
+        <a href="index.html" >MYLIB</a>
+    </div>
+    <nav class="links">
+        <a href="elements.html" >Elements </a>
+        <a class="active" href="components.html" >Components </a>
+        <a href="#" >Layouts </a>
+        <a href="#" >Drafts </a>
+        <a href="#" >Documentation </a>
+    </nav>
+</header>
+<main class="main">
+    <nav class="sidebar">
+        <a href="#" >chevron menu </a>
+        <a href="#" >dropdown menu</a>
+        <a href="#" >modal box</a>
+        <a href="#" >allerts</a>
+    </nav>
+    <div class="content-wrapper">
+        <div class="page-title-container">
+            <h2 class="page-title">Chevron menu</h2>
+        </div>
+        <div class="block-wrapper">
+            <div class="block1">
+                <img class="img-info" src="info.png"
+                     style="width:28px;height:28px " >
+                <div class="block1-text">Possible to use on gradient background<br> Easy to use opacity for items background <br>Cross-browser
+                </div>
+            </div>
+          <div class="chevron-menu">
+            <nav class="nav gradient">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">faq</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            <div class="block2-container">
+                <span class="html-block2">HTML</span>
+                <div class="block2">
+                    &lt;ul&gt; class=”list”>
+                    <br>&lt;li>&gt;&lt;a&gt; href=”#”>About&lt;/a>&lt;/li>
+                    <br>&lt;li>&gt;&lt;a&gt; href=”#”>Careers&lt;/a>&lt;/li>
+                    <br>&lt;li>&gt;&lt;a&gt; href=”#”>FAQ&lt;/a>&lt;/li>
+                    <br>&lt;li>&gt;&lt;a&gt; href=”#”>Contact&lt;/a>&lt;/li>
+                    &lt;/ul>
+
+                </div>
+            </div>
+            <div class="block3-container">
+                <span class="css-block3">CSS</span>
+                <div class="block3">
+                    div.menu-body-gradient <br> {
+                    <br>height: 96px;
+                    <br>padding: 2px 0;
+                    <br>background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+                   <br> }
+                    <br>ul.list-gr {
+                    <br></br>margin:0;
+                    <br>padding: 0 60px;
+                    <br>text-align: right;
+                    <br>}
+                    <br>ul.list-gr li {
+                    <br>display: inline-block;
+                    <br>position: relative;
+                    <br>padding: 30px 25px 29px 25px;
+                    <br>margin: 0 20px 0 25px;
+                    <br>background-color: #ffffff;
+                    <br>font-family: Helvetica;
+                    <br>font-style: normal;
+                    <br>font-weight: normal;
+                    <br>font-size: 32px;
+                    <br>line-height: 37px;
+                    <br>}
+                    <br>ul.list-gr li:hover {
+                    <br>opacity: 0.7;
+                    <br>}
+                    <br>ul.list-gr li::after {
+                    <br>position: absolute;
+                    <br>top:0;
+                    <br>left: 100%;
+                    <br>content: "";
+                    <br>width: 0;
+                    <br>height: 0;
+                    <br>border-style: solid;
+                    <br>border-width: 48px 0 48px 25px;
+                    <br>border-color: transparent transparent transparent #ffffff;
+                    <br>}
+                    <br>ul.list-gr li > a {
+                    <br>vertical-align: top;
+                    <br>text-decoration: none;
+                    <br>color: #000000;
+                    <br>}
+                    <br>ul.list-gr li > a::after {
+                    <br>position: absolute;
+                    <br>left: -25px;
+                    <br>top: 0px;
+                    <br>content: "";
+                    <br>width: 0;
+                    <br>height: 0;
+                    <br>border-style: solid;
+                    <br>border-width: 0 25px 48px 0;
+                    <br>border-color: transparent #ffffff transparent transparent;
+                    <br>}
+                    <br>ul.list-gr li > a::before {
+                    <br>position: absolute;
+                    <br>left: -25px;
+                    <br>top: 48px;
+                    <br>content: "";
+                    <br>width: 0;
+                    <br>height: 0;
+                    <br>border-style: solid;
+                    <br>border-width: 0 0 48px 25px;
+                    <br>border-color: transparent transparent #ffffff transparent;
+                    <br>}
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+</html>
